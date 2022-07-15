@@ -1,0 +1,342 @@
+:root{
+    --accent-color: #2196F3;
+    --background-color: #E5E5E5;
+    --background-button: #F5F4FA;
+    --footer-bgcolor: #2F303A;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+    --header-color: #FFFFFF;
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --studio-color: #000000;
+    --border-color-portfolio: rgba(238, 238, 238, 1);
+    --border-color-header: rgba(236, 236, 236, 1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    list-style: none;
+    color: var(--main-text-color);
+    background-color: var(--background-color);
+
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+
+    font-style: normal;
+    list-style-type: none;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+}
+.conteiner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px; 
+    
+    /* outline: 2px solid tomato; */
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    /* background-color: rgb(239, 177, 245); */
+}
+.invisible{
+    margin: 0;
+
+    background-color: aquamarine;
+    text-align: center;
+    /* visibility: hidden; */
+}
+
+/* стиль логотипа */
+.logo{
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.web{
+    color: var(--accent-color);
+}
+.studio{
+    color: var(--studio-color);
+}
+
+/* стиль навигации */
+
+.header{
+    background-color: var(--header-color);
+    border-bottom: 1px solid var(--border-color-header);
+}
+
+.site-nav,
+.contact-nav{
+    display: flex;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus,
+.site-nav .link.current,
+.address .link:focus,
+.address .link:hover {
+    color: var(--accent-color);
+}
+
+.site-nav .link {
+    /* display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; */
+
+    color: var(--main-text-color);
+}
+.contact-nav{
+    margin-left: auto;
+}
+
+.contact-nav .link{
+    /* display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; */
+
+    color: var(--second-text-color);
+}
+.site-nav .item:not(:last-child),
+.contact-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+.head-nav{
+    display: flex;
+    align-items: center;
+}
+
+/* стиль героя */
+.hero{
+    text-align: center;
+}
+
+.hero .title{
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--header-color);
+    /* background-color: lightgreen; */
+}
+
+/* стиль кнопок */
+
+.button{
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px;
+    border: 1px solid transparent;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--background-button);
+}
+
+.button.order{
+    padding: 10px 34px;
+    min-width: 200px;
+
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    
+}
+.button:hover,
+.button:focus{
+    color: var(--header-color);
+    background-color: var(--accent-color);
+}
+
+/* стиль особенности */
+
+.features .title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;;
+    text-align: left;
+    text-transform: uppercase;
+}
+.features .text{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--second-text-color);
+}
+.features .list{
+    display: flex;
+}
+.features .item{
+    width: 270px;
+    text-align: left;
+}
+.features .item:not(:last-child){
+    margin-right: 30px;
+}
+
+/* стиль чем мы занимаемся  и наша команда*/
+
+.work .title,
+.team .title{
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.work .list{    
+    display: flex;
+}
+.work .item{
+    display: block;
+}
+.work .item:not(:last-child){
+    margin-right: 30px;
+}
+.team{
+    line-height: 1.19;
+}
+.team .list{
+    display: flex;
+}
+.team .name{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.team .position{
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    color: var(--second-text-color);
+    text-align: center;
+}
+/* .fotocard{
+    outline: 1px solid blue;
+} */
+
+.fotocard:not(:last-child){
+    margin-right: 30px;
+}
+
+/* стиль проэкты */
+.filters .list{
+    display: flex;
+    padding-bottom: 50px;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+.filters .item:not(:last-child){
+    margin-right: 8px;
+}
+.project{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project .title{
+    margin: 0;
+    padding: 20px 24px 0 24px;
+
+    font-weight: 700;
+    font-size: 18px;
+    
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project .nav{
+    margin: 0;
+    padding: 4px 24px 20px 24px;
+    
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--second-text-color);
+}
+.project .item{
+    width: 370px;
+    
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.project .item:nth-child(3n){
+    margin-right: 0;
+}
+.project .item:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
+.project .card{
+    border-bottom: 1px solid var(--border-color-portfolio);
+}
+
+/* стиль футера */
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    background-color: var(--footer-bgcolor);
+}
+.footer .studio{
+    color: var(--header-color);  
+}
+
+.address{
+    margin-top: 20px;
+    text-decoration: none;
+}
+.address .link{
+    margin-bottom: 9px;
+    color: var(--footer-text-color);
+}
+.address .place{
+    margin-bottom: 9px;
+    color: var(--header-color);
+}
+.address .item:not(:last-child){
+    margin-bottom: 9px;
+}
